@@ -232,6 +232,7 @@ def run():
         appium_run(avd_name)
     else:
         result = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE).communicate()
+        logger.info('Run server... {}'.format(result))
 
 
 if __name__ == '__main__':
